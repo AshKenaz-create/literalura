@@ -32,9 +32,6 @@
 
 ## Evidencias 
 
-> Sube las imágenes a `docs/img/` y actualiza las rutas si cambias la carpeta.  
-> Recomendación: usa nombres simples y consistentes como los siguientes.
-
 ### 1) Menú en consola
 ![Menú](docs/img/01-menu.png)
 
@@ -60,7 +57,7 @@
 - Tablas (autores, libros, libro_autor, libro_idiomas)
 ![Tablas pgAdmin](docs/img/08-tablas-pgadmin.png)
 
-- (Opcional recomendado) Consulta SELECT mostrando datos reales en BD
+- (Consulta SELECT mostrando datos reales en BD
 ![Datos pgAdmin](docs/img/09-datos-pgadmin.png)
 
 ---
@@ -82,9 +79,6 @@ CREATE DATABASE literalura;
 
 ### 2) Crear usuario y permisos (recomendado)
 
-> Si prefieres usar tu usuario `postgres`, puedes saltarte este paso.  
-> Este usuario dedicado ayuda a evitar problemas de permisos con Hibernate/JPA.
-
 ```sql
 CREATE USER literalura_user WITH PASSWORD 'literalura123';
 GRANT ALL PRIVILEGES ON DATABASE literalura TO literalura_user;
@@ -95,11 +89,6 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO literalura_user;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO literalura_user;
 
 ## ⚙️ Configuración (PostgreSQL)
-
-En `src/main/resources/application.properties` configura tu conexión (ejemplo):
-
-> **Recomendación:** NO subas tus contraseñas reales al repositorio.  
-> Puedes usar variables de entorno o un `application-example.properties`.
 
 ```properties
 spring.application.name=literalura
