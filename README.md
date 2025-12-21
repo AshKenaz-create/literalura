@@ -57,7 +57,7 @@
 - Tablas (autores, libros, libro_autor, libro_idiomas)
 ![Tablas pgAdmin](docs/img/08-tablas-pgadmin.png)
 
-- (Consulta SELECT mostrando datos reales en BD
+- Consulta SELECT mostrando datos reales en BD
 ![Datos pgAdmin](docs/img/09-datos-pgadmin.png)
 
 ---
